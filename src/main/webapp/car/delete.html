@@ -1,0 +1,19 @@
+<lift:surround with="default" at="content">
+    <lift:DeleteCar.delete form="POST">
+        <table>
+            <tr>
+                <td>Make</td>
+                <td><car:make/></td>
+            </tr>
+            <tr>
+                <td>Model</td>
+                <td><car:model/></td>
+            </tr>
+            <tr>
+                <td>Year</td>
+                <td><car:manufacture_year/></td>
+            </tr>
+        </table>
+        <car:submit/>
+    </lift:DeleteCar.delete>
+</lift:surround>

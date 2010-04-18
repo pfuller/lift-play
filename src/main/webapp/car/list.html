@@ -1,0 +1,29 @@
+<lift:surround with="default" at="content">
+  <table>
+      <thead>
+        <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>View</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <lift:ListCar.list>
+              <tr>
+                  <td><car:make/></td>
+                  <td><car:model/></td>
+                  <td><car:manufacture_year/></td>
+                  <td><a car:view_href="">View</a></td>
+                  <td><a car:edit_href="">Edit</a></td>
+                  <td><a car:delete_href="">Delete</a></td>
+              </tr>
+        </lift:ListCar.list>
+              <tr><td>&nbsp;</td></tr>
+              <tr><td><a href="/car/create">Create Car</a></td></tr>
+      </tbody>
+  </table>
+</lift:surround>
